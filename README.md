@@ -40,10 +40,7 @@ ansible-playbook -i hosts/host master.yml
 
 run shell like:
 ```
-master_ip:  your hadoop master ip
-master_hostname: your hadoop master hostname
 
-above two variables must be same like your real hadoop master
 
 ansible-playbook -i hosts/host workers.yml -e "master_ip=172.16.251.70 master_hostname=hadoop-master"
 
