@@ -3,7 +3,7 @@
     msg: "User is {{ user }} and group is {{ group }}"
 - name: Create Hadoop Path
   vars:
-      ansible_python_interpreter: "/auto/csap/python3/bin/python"
+      ansible_python_interpreter: "{PATH_TO_PYTHON_EXE}"
   file: 
     path: "{{ item }}"
     owner: "{{ user }}"
