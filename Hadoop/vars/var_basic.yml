@@ -4,18 +4,18 @@ jvm_home: "/usr/lib/jvm"
 java_packages:
  - "java-1.8.0-openjdk"
  - "java-1.8.0-openjdk-devel"
-ansible_python_interpreter: "/auto/csap/python3/bin/python"
+ansible_python_interpreter: {PATH_TO_PYTHON_EXE}
 
 
 # hadoop basic vars
-download_path: "//auto/csap/downloads/kube"
+download_path: {DOWNLAOD_PATH}
 hadoop_version: "3.2.1"
-hadoop_path: "/data/hadoop"
-hadoop_config_path: "/data/hadoop//etc/hadoop"
-hadoop_tmp: "/data/hadoop/tmp"
-hadoop_dfs_name: "/data/hadoop/dfs/name"
-hadoop_dfs_data: "/data/hadoop/dfs/data"
-hadoop_log_path: "/data/hadoop/hadoop_logs"
+hadoop_path:  {HADOOP_PATH}
+hadoop_config_path: "{HADOOP_PATH}//etc/hadoop"
+hadoop_tmp: "{HADOOP_PATH}/tmp"
+hadoop_dfs_name: "{HADOOP_PATH}/dfs/name"
+hadoop_dfs_data: "{HADOOP_PATH}/dfs/data"
+hadoop_log_path: "{HADOOP_PATH}/hadoop_logs"
 
 hadoop_create_path:
   - "{{ hadoop_tmp }}"
