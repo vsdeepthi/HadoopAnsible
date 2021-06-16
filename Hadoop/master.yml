@@ -1,0 +1,10 @@
+- hosts: master 
+  vars_files:
+   - vars/user.yml
+   - vars/var_basic.yml
+   - vars/var_master.yml
+  vars:
+     install_hadoop: true
+     config_hadoop: true
+  roles:
+    - hadoop
