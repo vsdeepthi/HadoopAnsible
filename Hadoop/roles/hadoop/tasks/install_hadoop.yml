@@ -1,0 +1,6 @@
+---
+- debug:
+    msg: "Download path is {{ download_path }}/hadoop-{{hadoop_version}}.tar.gz , hadoop_path  {{ hadoop_path }}"
+
+- name: Unzip Hadoop
+  shell: "tar -xvf {{ download_path }}/hadoop-{{hadoop_version}}.tar.gz -C {{ hadoop_path }} --strip-components=1"
