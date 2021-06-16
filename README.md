@@ -10,6 +10,7 @@
 - Update {PATH_TO_PYTHON_EXE} in ansible.cfg, roles/hadoop/tasks/main.yml
 - Update {MASTER_IP}, {MASTER_HOSTNAME} in vars/var_master.yml, vars/var_workers.yml
 - Update {GENERIC_USER}, {GENERIC_USER_GROUP} in vars/user.yml
+- Update {PATH_TO_HOSTS} in ansible.cfg to point to the directory that has hosts inventory file
 
 ## Install Hadoop
 
