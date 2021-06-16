@@ -1,4 +1,4 @@
 ---
-master_ip: 171.70.184.99
-master_hostname: sjc-wwpl-csapc1
+master_ip: {MASTER_IP}
+master_hostname: {MASTER_HOSTNAME}
 
