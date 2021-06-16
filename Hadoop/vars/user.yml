@@ -1,3 +1,3 @@
 ---
-user: "csapadm"
-group: "eng"
+user: {GENERIC_USER}
+group: {GENERIC_USER_GROUP}
